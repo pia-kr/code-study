@@ -3,7 +3,6 @@ def f(n):
     if n == 1:
         return "-"
     else:
-        # 3등분
         a = f(n // 3)
         b = " " * (n // 3)
         return a + b + a
@@ -12,7 +11,7 @@ while True:
     try:
         # 입력받기
         N = int(input())
-        # 수정2 : 그냥 줄여도 됨
-        print(f(3 ** N))
+        ans = f(3 ** N)
+        print(ans)
     except:
         break
