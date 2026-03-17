@@ -1,11 +1,7 @@
-n = int(input())
- 
-li = []
-for i in str(n):
-    li.append(int(i))
-# li = list(map(int,str(n))) 으로 변경가능
-    
-li.sort(reverse=True) # 내림차순
- 
-for i in li:
-    print(i,end='')
+# 각 자리 수들을 리스트로 입력받기
+num = list(map(int, input()))
+# 각 자리 수 정렬
+num.sort(reverse=True)
+
+print(''.join(map(str, num)))
+#  join 함수는 문자열만 합칠 수 있기에 str 필요
